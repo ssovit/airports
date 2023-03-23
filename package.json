@@ -1,0 +1,23 @@
+{
+  "name": "airports",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WPPress/airports.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WPPress/airports/issues"
+  },
+  "homepage": "https://github.com/WPPress/airports#readme",
+  "dependencies": {
+  }
+}
