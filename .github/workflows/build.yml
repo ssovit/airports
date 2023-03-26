@@ -1,9 +1,10 @@
 
 name: Update airports.json
 on:
+  push:
   schedule:
     # schedule 1st of every month
-    - cron: '0 0 1 * *'
+    - cron: '0 0 * * 0'
 jobs:
   build:
     runs-on: ubuntu-latest
