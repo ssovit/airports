@@ -11,6 +11,7 @@ try {
         icao: airport.icao_code || '',
         name: airport.name || '',
         country: country.country || '',
+        city: airport.city || '',
       };
     });
     fs.writeFileSync("./airports.json", JSON.stringify(airports));
