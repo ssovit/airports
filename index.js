@@ -37,6 +37,9 @@ try {
       }
     )
     .on("done", (err) => {
+      if (!fs.existsSync("./data")) {
+        fs.mkdirSync("./data");
+      }
       fs.writeFileSync("./data/airports.json", JSON.stringify(result));
     });
 } catch (e) {
