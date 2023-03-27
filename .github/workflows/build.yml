@@ -10,12 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: Make API Call
-      uses: fjogeleit/http-request-action@v1
-      with:
-        url: 'https://airlabs.co/api/v9/airports?api_key=${{secrets.API_KEY}}'
-        method: 'GET'
-        responseFile: airports.json
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
     - name: Node LTS versions

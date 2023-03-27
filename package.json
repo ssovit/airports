@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/WPPress/airports#readme",
   "dependencies": {
-    "country-code-lookup": "^0.0.22"
+    "country-code-lookup": "^0.0.22",
+    "csv-parser": "^3.0.0",
+    "needle": "^3.2.0"
   }
 }
