@@ -1,5 +1,5 @@
 
-name: Update airports.json
+name: airports.json build
 on:
   push:
   schedule:
