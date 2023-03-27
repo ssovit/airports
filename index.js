@@ -37,7 +37,7 @@ try {
       }
     )
     .on("done", (err) => {
-      fs.writeFileSync("./airports.json", JSON.stringify(result, "", 2));
+      fs.writeFileSync("./airports.json", JSON.stringify(result));
     });
 } catch (e) {
   console.log(e);
