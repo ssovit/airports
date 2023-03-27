@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WPPress/airports.git"
+    "url": "git+https://github.com/ssovit/airports.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/WPPress/airports/issues"
+    "url": "https://github.com/ssovit/airports/issues"
   },
-  "homepage": "https://github.com/WPPress/airports#readme",
+  "homepage": "https://github.com/ssovit/airports#readme",
   "dependencies": {
     "country-code-lookup": "^0.0.22",
     "csv-parser": "^3.0.0",
