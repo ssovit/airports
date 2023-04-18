@@ -40,7 +40,20 @@ try {
       if (!fs.existsSync("./data")) {
         fs.mkdirSync("./data");
       }
-      fs.writeFileSync("./data/airports.json", JSON.stringify(result));
+      const alt_names = JSON.parse(
+        fs.readFileSync("./city_alt_names.json")
+      );
+      const updated = result.map((item) => {
+        let alt_name=item.alt_name;
+        try {
+          alt_name=`${item.alt_name}, ${alt_names[item.country][item.city]}`;
+        } catch (e) {
+          //console.log(e);
+        }
+        alt_name=alt_name.replace(/,/g," ").replace(/\s+/g,' ').trim();
+        return {...item,alt_name};
+      });
+      fs.writeFileSync("./data/airports.json", JSON.stringify(updated));
     });
 } catch (e) {
   console.log(e);
