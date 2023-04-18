@@ -50,7 +50,8 @@ try {
         } catch (e) {
           //console.log(e);
         }
-        alt_name=alt_name.replace(/,/g," ").replace(/\s+/g,' ').trim();
+        alt_name=alt_name.replace(/,\s/g,",").replace(/\s+/g," ").trim(',').split(",").filter(i=>i.length>0);
+        
         return {...item,alt_name};
       });
       fs.writeFileSync("./data/airports.json", JSON.stringify(updated));
